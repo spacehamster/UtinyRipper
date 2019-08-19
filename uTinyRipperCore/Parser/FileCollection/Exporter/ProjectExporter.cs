@@ -92,6 +92,7 @@ namespace uTinyRipper.AssetExporters
 			OverrideYamlExporter(ClassIDType.TerrainData);
 			OverrideYamlExporter(ClassIDType.LightmapSettings);
 			OverrideYamlExporter(ClassIDType.AudioReverbZone);
+			OverrideYamlExporter(ClassIDType.Cloth);
 			OverrideYamlExporter(ClassIDType.OffMeshLink);
 			OverrideYamlExporter(ClassIDType.OcclusionArea);
 			OverrideYamlExporter(ClassIDType.NavMeshObsolete);

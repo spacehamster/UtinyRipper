@@ -151,6 +151,9 @@
     <Compile Include="Parser\Classes\Base\Renderer\ReceiveGI.cs" />
     <Compile Include="Parser\Classes\Camera\FieldOfViewAxis.cs" />
     <Compile Include="Parser\Classes\CanvasGroup.cs" />
+    <Compile Include="Parser\Classes\Cloth\Cloth.cs" />
+    <Compile Include="Parser\Classes\Cloth\ClothSkinningCoefficient.cs" />
+    <Compile Include="Parser\Classes\Cloth\ClothSphereColliderPair.cs" />
     <Compile Include="Parser\Classes\GUITexture.cs" />
     <Compile Include="Parser\Classes\GUIText\GUIText.cs" />
     <Compile Include="Parser\Classes\GUIText\TextAlignment.cs" />
