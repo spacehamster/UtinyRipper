@@ -130,6 +130,8 @@ namespace uTinyRipper
 					return new Texture3D(assetInfo);
 				case ClassIDType.NewAnimationTrack:
 					return new NewAnimationTrack(assetInfo);
+				case ClassIDType.LineRenderer:
+					return new LineRenderer(assetInfo);
 				case ClassIDType.FlareLayer:
 					return new FlareLayer(assetInfo);
 				case ClassIDType.NavMeshProjectSettings:

@@ -74,6 +74,7 @@ namespace uTinyRipper.AssetExporters
 			OverrideYamlExporter(ClassIDType.MonoBehaviour);
 			OverrideYamlExporter(ClassIDType.Texture3D);
 			OverrideYamlExporter(ClassIDType.NewAnimationTrack);
+			OverrideYamlExporter(ClassIDType.LineRenderer);
 			OverrideYamlExporter(ClassIDType.FlareLayer);
 			OverrideYamlExporter(ClassIDType.NavMeshProjectSettings);
 			OverrideYamlExporter(ClassIDType.Font);

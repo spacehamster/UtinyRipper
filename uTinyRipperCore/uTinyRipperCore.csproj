@@ -165,6 +165,10 @@
     <Compile Include="Parser\Classes\LightmapSettings\Lightmapper.cs" />
     <Compile Include="Parser\Classes\LightmapSettings\ReflectionCubemapCompression.cs" />
     <Compile Include="Parser\Classes\LightmapSettings\Sampling.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineAlignment.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineRenderer.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineRendererParameters.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineTextureMode.cs" />
     <Compile Include="Parser\Classes\Mesh\ChannelFormat\ChannelFormat.cs" />
     <Compile Include="Parser\Classes\Mesh\ChannelFormat\ChannelFormatV2019.cs" />
     <Compile Include="Parser\Classes\Mesh\ChannelFormat\ChannelFormatV4.cs" />
