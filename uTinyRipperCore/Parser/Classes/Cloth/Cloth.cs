@@ -13,6 +13,15 @@ namespace uTinyRipper.Classes
 		{
 		}
 
+		/// <summary>
+		/// 2017.3.0 and greater
+		/// </summary>
+		public static bool IsReadSelfCollision(Version version)
+		{
+			return version.IsGreaterEqual(2017, 3);
+		}
+
+
 		public override void Read(AssetReader reader)
 		{
 			base.Read(reader);
@@ -35,14 +44,14 @@ namespace uTinyRipper.Classes
 			m_coefficients = reader.ReadAssetArray<ClothSkinningCoefficient>();
 			m_capsuleColliders = reader.ReadAssetArray<PPtr<CapsuleCollider>>();
 			m_sphereColliders = reader.ReadAssetArray<ClothSphereColliderPair>();
-			var pos = reader.BaseStream.Position;
-			var data = reader.ReadBytes(50);
-			reader.BaseStream.Position = pos;
-			SelfCollisionDistance = reader.ReadSingle();
-			SelfCollisionStiffness = reader.ReadSingle();
-			m_selfAndInterCollisionIndices = reader.ReadUInt32Array();
-			m_virtualParticleWeights = reader.ReadAssetArray<Vector3f>();
-			m_virtualParticleIndices = reader.ReadUInt32Array();
+			if (IsReadSelfCollision(reader.Version))
+			{
+				SelfCollisionDistance = reader.ReadSingle();
+				SelfCollisionStiffness = reader.ReadSingle();
+				m_selfAndInterCollisionIndices = reader.ReadUInt32Array();
+				m_virtualParticleWeights = reader.ReadAssetArray<Vector3f>();
+				m_virtualParticleIndices = reader.ReadUInt32Array();
+			}
 		}
 
 		public override IEnumerable<Object> FetchDependencies(ISerializedFile file, bool isLog = false)
