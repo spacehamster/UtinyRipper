@@ -169,6 +169,11 @@
     <Compile Include="Parser\Classes\Mesh\IndexFormat.cs" />
     <Compile Include="Parser\Classes\Mesh\MeshOptimizationFlags.cs" />
     <Compile Include="Parser\Classes\ParticleSystem\UV\ParticleSystemAnimationRowMode.cs" />
+    <Compile Include="Parser\Classes\PlayableDirector\DirectorUpdateMode.cs" />
+    <Compile Include="Parser\Classes\PlayableDirector\DirectorWrapMode.cs" />
+    <Compile Include="Parser\Classes\PlayableDirector\ExposedReference.cs" />
+    <Compile Include="Parser\Classes\PlayableDirector\PlayableDirector.cs" />
+    <Compile Include="Parser\Classes\PlayableDirector\SceneBinding.cs" />
     <Compile Include="Parser\Classes\Serialize\MinMaxAABB.cs" />
     <Compile Include="Parser\Classes\Mesh\VariableBoneCountWeights.cs" />
     <Compile Include="Parser\Classes\NavMeshObsolete.cs" />
