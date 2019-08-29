@@ -77,6 +77,10 @@ namespace uTinyRipper.Exporters.Scripts.Mono
 		{
 			get
 			{
+				if (Config.IsExportScriptsAsPublic)
+				{
+					return PublicKeyWord;
+				}
 				if (Definition == null)
 				{
 					return PublicKeyWord;

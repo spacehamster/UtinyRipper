@@ -31,6 +31,10 @@ namespace uTinyRipper.Exporters.Scripts.Mono
 				{
 					return "";
 				}
+				if (Config.IsExportScriptsAsPublic)
+				{
+					return PublicKeyWord;
+				}
 				if (Property.GetMethod.IsPublic)
 				{
 					return PublicKeyWord;
@@ -53,6 +57,10 @@ namespace uTinyRipper.Exporters.Scripts.Mono
 				if(!HasSetter)
 				{
 					return "";
+				}
+				if (Config.IsExportScriptsAsPublic)
+				{
+					return PublicKeyWord;
 				}
 				if (Property.SetMethod.IsPublic)
 				{

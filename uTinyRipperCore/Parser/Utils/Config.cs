@@ -16,5 +16,7 @@
 		public static bool IsExportDependencies { get; set; } = true;
 #warning TODO: implement
 		public static bool IsExportTopmostSerializedVersion => true;
+
+		public static bool IsExportScriptsAsPublic { get; set; } = false;
 	}
 }
