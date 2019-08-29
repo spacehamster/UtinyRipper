@@ -228,6 +228,8 @@ namespace uTinyRipper
 					return new NavMeshData(assetInfo);
 				case ClassIDType.UnityConnectSettings:
 					return new UnityConnectSettings(assetInfo);
+				case ClassIDType.PlayableDirector:
+					return new PlayableDirector(assetInfo);
 				case ClassIDType.ParticleSystemForceField:
 					return new ParticleSystemForceField(assetInfo);
 				case ClassIDType.OcclusionCullingData:
