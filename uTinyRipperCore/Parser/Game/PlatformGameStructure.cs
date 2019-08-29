@@ -150,12 +150,13 @@ namespace uTinyRipper
 			{
 				if (AssemblyManager.IsAssembly(file.Name))
 				{
-					if (!assemblies.ContainsKey(file.Name))
+					if (assemblies.ContainsKey(file.Name))
+					{
+						Logger.Log(LogType.Warning, LogCategory.Import, $"Duplicate assemblies found: '{assemblies[file.Name]}' & '{file.FullName}'");
+					}
+					else
 					{
 						assemblies.Add(file.Name, file.FullName);
-					} else
-					{
-						Logger.Log(LogType.Warning, LogCategory.General, $"Found assemblies with the same name {file.FullName} and {assemblies[file.Name]}");
 					}
 				}
 			}
