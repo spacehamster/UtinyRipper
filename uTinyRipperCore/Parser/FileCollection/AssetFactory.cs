@@ -132,6 +132,8 @@ namespace uTinyRipper
 					return new Texture3D(assetInfo);
 				case ClassIDType.NewAnimationTrack:
 					return new NewAnimationTrack(assetInfo);
+				case ClassIDType.LineRenderer:
+					return new LineRenderer(assetInfo);
 				case ClassIDType.FlareLayer:
 					return new FlareLayer(assetInfo);
 				case ClassIDType.NavMeshProjectSettings:
@@ -182,6 +184,8 @@ namespace uTinyRipper
 					return new LightmapSettings(assetInfo);
 				case ClassIDType.AudioReverbZone:
 					return new AudioReverbZone(assetInfo);
+				case ClassIDType.Cloth:
+					return new Cloth(assetInfo);
 				case ClassIDType.OffMeshLink:
 					return new OffMeshLink(assetInfo);
 				case ClassIDType.OcclusionArea:

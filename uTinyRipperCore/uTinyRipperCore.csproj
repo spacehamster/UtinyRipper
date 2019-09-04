@@ -162,6 +162,9 @@
     <Compile Include="Parser\Classes\Joint\SpringJoint.cs" />
     <Compile Include="Parser\Classes\Joint\HingeJoint.cs" />
     <Compile Include="Parser\Classes\Joint\CharacterJoint.cs" />
+    <Compile Include="Parser\Classes\Cloth\Cloth.cs" />
+    <Compile Include="Parser\Classes\Cloth\ClothSkinningCoefficient.cs" />
+    <Compile Include="Parser\Classes\Cloth\ClothSphereColliderPair.cs" />
     <Compile Include="Parser\Classes\GUITexture.cs" />
     <Compile Include="Parser\Classes\GUIText\GUIText.cs" />
     <Compile Include="Parser\Classes\GUIText\TextAlignment.cs" />
@@ -175,6 +178,10 @@
     <Compile Include="Parser\Classes\LightmapSettings\Lightmapper.cs" />
     <Compile Include="Parser\Classes\LightmapSettings\ReflectionCubemapCompression.cs" />
     <Compile Include="Parser\Classes\LightmapSettings\Sampling.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineAlignment.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineRenderer.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineRendererParameters.cs" />
+    <Compile Include="Parser\Classes\LineRenderer\LineTextureMode.cs" />
     <Compile Include="Parser\Classes\Mesh\ChannelFormat\ChannelFormat.cs" />
     <Compile Include="Parser\Classes\Mesh\ChannelFormat\ChannelFormatV2019.cs" />
     <Compile Include="Parser\Classes\Mesh\ChannelFormat\ChannelFormatV4.cs" />

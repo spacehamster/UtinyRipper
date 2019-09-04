@@ -75,6 +75,7 @@ namespace uTinyRipper.AssetExporters
 			OverrideYamlExporter(ClassIDType.MonoBehaviour);
 			OverrideYamlExporter(ClassIDType.Texture3D);
 			OverrideYamlExporter(ClassIDType.NewAnimationTrack);
+			OverrideYamlExporter(ClassIDType.LineRenderer);
 			OverrideYamlExporter(ClassIDType.FlareLayer);
 			OverrideYamlExporter(ClassIDType.NavMeshProjectSettings);
 			OverrideYamlExporter(ClassIDType.Font);
@@ -97,6 +98,7 @@ namespace uTinyRipper.AssetExporters
 			OverrideYamlExporter(ClassIDType.TerrainData);
 			OverrideYamlExporter(ClassIDType.LightmapSettings);
 			OverrideYamlExporter(ClassIDType.AudioReverbZone);
+			OverrideYamlExporter(ClassIDType.Cloth);
 			OverrideYamlExporter(ClassIDType.OffMeshLink);
 			OverrideYamlExporter(ClassIDType.OcclusionArea);
 			OverrideYamlExporter(ClassIDType.NavMeshObsolete);
