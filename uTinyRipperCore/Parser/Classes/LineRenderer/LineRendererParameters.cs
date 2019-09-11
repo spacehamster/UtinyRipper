@@ -10,11 +10,21 @@ namespace uTinyRipper.Classes.LineRenderers
 
 		private static int GetSerializedVersion(Version version)
 		{
+			if(version.IsGreaterEqual(2018, 3))
+			{
+				return 3;
+			}
 			return 2;
 			// unknown
 			//return 1;
 		}
-
+		/// <summary>
+		/// 2018.3 and greater
+		/// </summary>
+		private static bool IsReadShadowBias(Version version)
+		{
+			return version.IsGreaterEqual(2018, 3);
+		}
 		public void Read(AssetReader reader)
 		{
 			WidthMultiplier = reader.ReadSingle();
@@ -24,6 +34,10 @@ namespace uTinyRipper.Classes.LineRenderers
 			NumCapVertices = reader.ReadInt32();
 			Alignment = (LineAlignment)reader.ReadInt32();
 			TextureMode = (LineTextureMode)reader.ReadInt32();
+			if (IsReadShadowBias(reader.Version))
+			{
+				ShadowBias = reader.ReadSingle();
+			}
 			GenerateLightingData = reader.ReadBoolean();
 			reader.AlignStream(AlignType.Align4);
 		}
@@ -39,6 +53,7 @@ namespace uTinyRipper.Classes.LineRenderers
 			node.Add(NumCapVerticesName, NumCapVertices);
 			node.Add(AlignmentName, (int)Alignment);
 			node.Add(TextureModeName, (int)TextureMode);
+			node.Add(ShadowBiasName, ShadowBias);
 			node.Add(GenerateLightingDataName, GenerateLightingData);
 			return node;
 		}
@@ -50,6 +65,7 @@ namespace uTinyRipper.Classes.LineRenderers
 		public const string NumCapVerticesName = "numCapVertices";
 		public const string AlignmentName = "alignment";
 		public const string TextureModeName = "textureMode";
+		public const string ShadowBiasName = "shadowBias";
 		public const string GenerateLightingDataName = "generateLightingData";
 
 		public float WidthMultiplier { get; private set; }
@@ -59,6 +75,7 @@ namespace uTinyRipper.Classes.LineRenderers
 		public int NumCapVertices { get; private set; }
 		public LineAlignment Alignment { get; private set; }
 		public LineTextureMode TextureMode { get; private set; }
+		public float ShadowBias { get; private set; }
 		public bool GenerateLightingData { get; private set; }
 	}
 }
