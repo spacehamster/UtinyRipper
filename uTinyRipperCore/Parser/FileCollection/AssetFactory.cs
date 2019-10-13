@@ -76,8 +76,8 @@ namespace uTinyRipper
 					return new PhysicsManager(assetInfo);
 				case ClassIDType.CircleCollider2D:
 					return new CircleCollider2D(assetInfo);
-				case ClassIDType.HingeJoint:
-					return new HingeJoint(assetInfo);
+				//case ClassIDType.HingeJoint:
+				//	return new HingeJoint(assetInfo);
 				case ClassIDType.PolygonCollider2D:
 					return new PolygonCollider2D(assetInfo);
 				case ClassIDType.BoxCollider2D:
@@ -132,8 +132,8 @@ namespace uTinyRipper
 					return new Texture3D(assetInfo);
 				case ClassIDType.NewAnimationTrack:
 					return new NewAnimationTrack(assetInfo);
-				case ClassIDType.LineRenderer:
-					return new LineRenderer(assetInfo);
+				//case ClassIDType.LineRenderer:
+				//	return new LineRenderer(assetInfo);
 				case ClassIDType.FlareLayer:
 					return new FlareLayer(assetInfo);
 				case ClassIDType.NavMeshProjectSettings:
@@ -152,16 +152,16 @@ namespace uTinyRipper
 					return new CapsuleCollider(assetInfo);
 				case ClassIDType.SkinnedMeshRenderer:
 					return new SkinnedMeshRenderer(assetInfo);
-				case ClassIDType.FixedJoint:
-					return new FixedJoint(assetInfo);
+				//case ClassIDType.FixedJoint:
+				//	return new FixedJoint(assetInfo);
 				case ClassIDType.BuildSettings:
 					return new BuildSettings(assetInfo);
-				case ClassIDType.CharacterController:
-					return new CharacterController(assetInfo);
-				case ClassIDType.CharacterJoint:
-					return new CharacterJoint(assetInfo);
-				case ClassIDType.SpringJoint:
-					return new SpringJoint(assetInfo);
+				//case ClassIDType.CharacterController:
+				//	return new CharacterController(assetInfo);
+				//case ClassIDType.CharacterJoint:
+				//	return new CharacterJoint(assetInfo);
+				//case ClassIDType.SpringJoint:
+				//	return new SpringJoint(assetInfo);
 				case ClassIDType.AssetBundle:
 					return new AssetBundle(assetInfo);
 				case ClassIDType.WheelCollider:
@@ -174,8 +174,8 @@ namespace uTinyRipper
 					return new PreloadData(assetInfo);
 				case ClassIDType.MovieTexture:
 					return new MovieTexture(assetInfo);
-				case ClassIDType.ConfigurableJoint:
-					return new ConfigurableJoint(assetInfo);
+				//case ClassIDType.ConfigurableJoint:
+				//	return new ConfigurableJoint(assetInfo);
 				case ClassIDType.TerrainCollider:
 					return new TerrainCollider(assetInfo);
 				case ClassIDType.TerrainData:
@@ -184,8 +184,8 @@ namespace uTinyRipper
 					return new LightmapSettings(assetInfo);
 				case ClassIDType.AudioReverbZone:
 					return new AudioReverbZone(assetInfo);
-				case ClassIDType.Cloth:
-					return new Cloth(assetInfo);
+				//case ClassIDType.Cloth:
+				//	return new Cloth(assetInfo);
 				case ClassIDType.OffMeshLink:
 					return new OffMeshLink(assetInfo);
 				case ClassIDType.OcclusionArea:
